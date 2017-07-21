@@ -14,3 +14,17 @@ public static void descargar(String url, String ficheroDestino) throws Exception
    inputStream.close();  // Cerramos la conexión entrada
    outputStream.close(); // Cerramos la conexión salida
 }
+
+
+
+public static void mostrarContenido(String url) throws Exception {
+   URL ficheroUrl = new URL(url);
+   BufferedReader in = new BufferedReader(new InputStreamReader(ficheroUrl.openStream()));
+
+   String linea;
+   while ((linea = in.readLine()) != null){
+      System.out.println(linea);
+   }
+
+   in.close(); // Cerramos la conexión  
+}
