@@ -1,6 +1,0 @@
-//Parametros para rengbook
-#
-@Peticion="true";
-@Service= "Messenger";
-@Friend="";
-#
